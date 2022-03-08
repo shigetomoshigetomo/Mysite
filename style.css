@@ -144,3 +144,74 @@ header {
   background-size: cover;
   background-position: center;
 }
+
+.feature-contents {
+  width: 980px;
+  margin: 90px 0;
+}
+
+.feature-text {
+  text-align: center;
+}
+
+.feature-text > h3 {
+  font-size: 32px;
+  color: #000000;
+  position: relative;
+}
+
+.feature-text > h3:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  display: inline-block;
+  width: 70px;
+  height: 3px;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%);
+  background-color: #ec715f;
+}
+
+.feature-text > p {
+  font-size: 16px;
+  color: #000000;
+  margin: 30px 0;
+}
+
+.strength-items {
+  display: flex;
+}
+
+.icon {
+  font-size: 60px;
+}
+
+.strength {
+  width: 320px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.strength:nth-child(3) {
+  margin-right: 0;
+}
+
+.strength > span,
+h5 {
+  display: block;
+  text-align: center;
+}
+
+.strength > h5 {
+  font-size: 20px;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.strength > p {
+  font-size: 16px;
+  color: #000000;
+}
