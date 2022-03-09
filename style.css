@@ -37,6 +37,11 @@ header {
   list-style: none;
 }
 
+.nav-list > li > a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
 .main-visual {
   background-image: url("img/mv.png");
   background-size: 100% 100%;
@@ -214,4 +219,163 @@ h5 {
 .strength > p {
   font-size: 16px;
   color: #000000;
+}
+
+.profile {
+  background-color: #eceff1;
+  color: #000000;
+}
+
+.profile-contents {
+  padding: 90px 0;
+}
+
+.profile-text {
+  text-align: center;
+}
+
+.profile-text > h3 {
+  font-size: 32px;
+  position: relative;
+}
+
+.profile-text > h3:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  display: inline-block;
+  width: 70px;
+  height: 3px;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%);
+  background-color: #ec715f;
+}
+
+.profile-text > p {
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.profile-main {
+  display: flex;
+}
+
+.my-photo {
+  width: 512px;
+}
+
+.my-image {
+  background-image: url("img/my-icon.jpg");
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.my-profile {
+  width: 512px;
+}
+
+.my-name {
+  margin-bottom: 20px;
+}
+
+.my-profile > h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.my-profile > p {
+  font-size: 16px;
+}
+
+.contact-contents {
+  width: 800px;
+  margin: 90px auto;
+  color: #000000;
+  text-align: center;
+}
+
+.contact-text > h3 {
+  font-size: 32px;
+  position: relative;
+}
+
+.contact-text > h3:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  display: inline-block;
+  width: 70px;
+  height: 3px;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%);
+  background-color: #ec715f;
+}
+
+.contact-text > p {
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.my-contact {
+  display: flex;
+}
+
+.adress {
+  width: 400px;
+}
+
+.adress > h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.adress > a {
+  color: #000000;
+}
+
+.tel {
+  margin-top: 20px;
+}
+
+.sns {
+  width: 400px;
+}
+
+.sns > h4 {
+  font-size: 20px;
+}
+
+.awesome {
+  margin-top: 5px;
+  display: flex;
+}
+
+.sns-icon {
+  display: block;
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.sns-icon:nth-child(3) {
+  margin-right: none;
+}
+
+footer {
+  background-color: #ec715f;
+  color: #fafafa;
+  height: 60px;
+  text-align: center;
+}
+
+.webcamp {
+  font-size: 16px;
+  line-height: 60px;
 }
