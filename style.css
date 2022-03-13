@@ -17,11 +17,12 @@ header {
 
 .header-item {
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
-  width: 130px;
-  height: 65px;
+  width: 100px;
+  height: 40px;
 }
 
 .nav-list {
@@ -40,6 +41,10 @@ header {
 .nav-list > li > a {
   text-decoration: none;
   color: #fafafa;
+}
+
+#hm-icon {
+  display: none;
 }
 
 .main-visual {
@@ -378,4 +383,148 @@ footer {
 .webcamp {
   font-size: 16px;
   line-height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    height: 50px;
+    padding: 5px 0;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  #hm-icon {
+    display: block;
+    text-align: right;
+  }
+
+  .menu-trigger,
+  .menu-trigger span {
+    display: inline-block;
+    transition: all.4s;
+    box-sizing: border-box;
+  }
+
+  .menu-trigger {
+    position: relative;
+    width: 30px;
+    height: 26px;
+  }
+
+  .menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fafafa;
+    border-radius: 4px;
+  }
+
+  .menu-trigger span:nth-child(1) {
+    top: 0;
+  }
+
+  .menu-trigger span:nth-child(2) {
+    top: 11px;
+  }
+
+  .menu-trigger span:nth-child(3) {
+    bottom: 0;
+  }
+
+  .menu-trigger.active span:nth-child(1) {
+    -webkit-transform: translateY(11px) rotate(-45deg);
+    transform: translateY(11px) rotate(-45deg);
+    background-color: #fff;
+  }
+
+  .menu-trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-trigger.active span:nth-child(3) {
+    -webkit-transform: translateY(-11px) rotate(45deg);
+    transform: translateY(-11px) rotate(45deg);
+    background-color: #fff;
+  }
+
+  .main-visual {
+    background-image: url(img/code.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main-text {
+    font-size: 40px;
+  }
+
+  .sub-text {
+    font-size: 18px;
+  }
+
+  .portfolio-contents {
+    width: 100%;
+  }
+
+  .portfolio-photoes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .photo:nth-child(odd) {
+    display: none;
+  }
+
+  .feature-contents {
+    width: 100%;
+  }
+
+  .strength-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .strength:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .profile-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-profile {
+    text-align: center;
+  }
+
+  .my-name > h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .my-skills > h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .contact-contents {
+    width: 100%;
+  }
+
+  .my-contact {
+    display: block;
+  }
 }

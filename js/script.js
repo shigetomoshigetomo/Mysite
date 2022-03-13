@@ -8,3 +8,11 @@ $(function(){
     return false;
   });
 });
+
+
+$(function(){
+  $('.menu-trigger').on('click',function(event){
+    $(this).toggleClass('active');
+    event.preventDefault();
+  });
+});
