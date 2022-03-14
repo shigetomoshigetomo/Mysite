@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
+  /* width: 100%; */
 }
 
 header {
@@ -301,6 +301,9 @@ h5 {
   width: 800px;
   margin: 90px auto;
   color: #000000;
+}
+
+.contact-text {
   text-align: center;
 }
 
@@ -335,14 +338,16 @@ h5 {
 
 .adress {
   width: 400px;
+  text-align: center;
+  display: block;
 }
 
-.adress > h4 {
+.link-title {
   font-size: 20px;
   margin-bottom: 5px;
 }
 
-.adress > a {
+.adress-link > a {
   color: #000000;
 }
 
@@ -361,10 +366,10 @@ h5 {
 .awesome {
   margin-top: 5px;
   display: flex;
+  justify-content: center;
 }
 
 .sns-icon {
-  display: block;
   font-size: 50px;
   margin-right: 20px;
 }
@@ -525,6 +530,15 @@ footer {
   }
 
   .my-contact {
-    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sns {
+    margin-top: 20px;
+  }
+
+  .sns-icon {
+    margin-right: 8px;
   }
 }
