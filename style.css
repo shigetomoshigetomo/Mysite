@@ -25,12 +25,15 @@ header {
   height: 40px;
 }
 
-.nav-list {
-  display: flex;
-  text-align: right;
+nav {
+  margin: 0 0 0 auto;
 }
 
-.nav-list > li {
+.nav-list {
+  display: flex;
+}
+
+li {
   font-size: 16px;
   padding: 0 30px;
   line-height: 70px;
@@ -361,6 +364,7 @@ h5 {
 
 .sns > h4 {
   font-size: 20px;
+  text-align: center;
 }
 
 .awesome {
@@ -536,6 +540,7 @@ footer {
 
   .sns {
     margin-top: 20px;
+    text-align: center;
   }
 
   .sns-icon {

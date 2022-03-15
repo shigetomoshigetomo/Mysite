@@ -16,3 +16,8 @@ $(function(){
     event.preventDefault();
   });
 });
+
+
+$('.menu-trigger').click(function(){
+  $('#play-button').get(0).play();
+});
